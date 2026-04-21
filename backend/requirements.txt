@@ -14,19 +14,12 @@ scikit-learn
 shap==0.46.0
 joblib
 
-# --- Visualization ---
-matplotlib
-seaborn
-
 # --- LLM (Claude Sonnet 4.6 via Anthropic SDK) ---
 anthropic
 
 # --- RAG (TF-IDF based, no LLM needed) ---
 pypdf
 python-docx
-
-# --- Reporting ---
-reportlab
 
 # --- Backend ---
 flask
