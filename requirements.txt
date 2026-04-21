@@ -1,0 +1,35 @@
+# ============================================================
+# Gen-AI Automated Data Analytics Platform — Backend requirements
+# Python 3.10 or 3.11 recommended (NOT 3.12+)
+# Install with: pip install -r requirements.txt
+#
+# Only includes packages actually imported by the active Flask
+# stack (app.py → data_loader, preprocessing, eda, task_identifier,
+# automl_engine, model_trainer). Narrative + PDF export run in the
+# Node report-server (see report-server/package.json).
+# ============================================================
+
+# --- Core data stack ---
+numpy
+pandas
+
+# --- Machine learning ---
+scikit-learn
+shap==0.46.0      # model_trainer.py tree explainer
+joblib
+
+# --- LLM (Claude Sonnet via Anthropic SDK) ---
+# Used by app.py for Claude-driven chart-config generation.
+anthropic
+
+# --- Backend web server ---
+flask
+flask-cors
+gunicorn          # production deployment
+
+# --- File handling (pandas reads .xlsx / .xls via these) ---
+openpyxl
+xlrd
+
+# --- Env loading ---
+python-dotenv
