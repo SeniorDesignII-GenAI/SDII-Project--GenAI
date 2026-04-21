@@ -11,6 +11,7 @@ scipy
 
 # --- Machine Learning ---
 scikit-learn
+shap==0.46.0
 joblib
 
 # --- LLM (Claude Sonnet 4.6 via Anthropic SDK) ---
